@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DX.Data.Xpo", "DX.Data.Xpo\DX.Data.Xpo.csproj", "{7C403C36-552A-4C3D-ADED-751D44BD4C09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecos.Xpo.Identity.Core", "Ecos.Xpo.Identity.Core\Ecos.Xpo.Identity.Core.csproj", "{7C403C36-552A-4C3D-ADED-751D44BD4C09}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DX.Data.Xpo.Identity", "DX.Data.Xpo.Identity\DX.Data.Xpo.Identity.csproj", "{8CEA3C12-FFA8-4714-9CAF-5E7A35B190DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecos.Xpo.Identity", "Ecos.Xpo.Identity\Ecos.Xpo.Identity.csproj", "{8CEA3C12-FFA8-4714-9CAF-5E7A35B190DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DX.Utils", "DX.Utils\DX.Utils.csproj", "{950693C4-0A0D-4943-BD0A-DF38FDBFB21D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecos.Xpo.Identity.Utils", "Ecos.Xpo.Identity.Utils\Ecos.Xpo.Identity.Utils.csproj", "{950693C4-0A0D-4943-BD0A-DF38FDBFB21D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

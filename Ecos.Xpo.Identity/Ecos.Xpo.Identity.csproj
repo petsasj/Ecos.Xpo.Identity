@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Authors>Ecos</Authors>
+    <Description>XPO Based storage provider for ASP.NET Identity, based on Don Wibier's project hosted at https://github.com/donwibier/DXWeb</Description>
+    <Copyright></Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/petsasj/Ecos.Xpo.Identity/blob/master/Readme.md</PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageTags>Ecos, Xpo, Identity</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+      <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RepositoryUrl>https://github.com/petsasj/Ecos.Xpo.Identity</RepositoryUrl>
+    <PackageId>Ecos.Xpo.Identity</PackageId>
+    <Company>SoftOne - Ecos</Company>
+    <Product>Ecos.Xpo.Identity</Product>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net461'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Xpo" Version="18.2.7" />    
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net461'">
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.2" />
+  </ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />			
+		
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Ecos.Xpo.Identity.Core\Ecos.Xpo.Identity.Core.csproj" />
+	  <ProjectReference Include="..\Ecos.Xpo.Identity.Utils\Ecos.Xpo.Identity.Utils.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+    <None Update="XpoDiagram.xpo.diagram">
+      <AutoGen>True</AutoGen>
+    </None>
+  </ItemGroup>
+</Project>
