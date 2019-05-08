@@ -218,7 +218,7 @@
             <field Id="12b63dcb-4c29-4d72-bae1-601356c498d5" name="User" virtualColumnType="XpoDxUser" logicalType="XpoDxUser" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="78c146a7-feb4-4d9a-b2fb-4697905c5941">
-            <persistentAlias Id="6f64fcea-25a5-499d-8b5c-87e59ce74375" name="UserId" virtualColumnType="String" expression="[User!Key]" />
+            <persistentAlias Id="6f64fcea-25a5-499d-8b5c-87e59ce74375" name="UserId" virtualColumnType="String" expression="[User.Id]" />
           </generalXpObjectHasFields>
         </fields>
         <superClass>
@@ -273,7 +273,7 @@
             <field Id="12f6c659-6cd2-4dcf-bb40-d5fd2c711758" name="Value" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="250" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="c64d1818-fc92-46c0-9ee8-9969c1bf0bbe">
-            <persistentAlias Id="61e945fb-901b-4953-8634-727c44855d7c" name="UserId" virtualColumnType="String" expression="[User!Key]" />
+            <persistentAlias Id="61e945fb-901b-4953-8634-727c44855d7c" name="UserId" virtualColumnType="String" expression="[User.Id]" />
           </generalXpObjectHasFields>
         </fields>
         <superClass>
@@ -324,7 +324,7 @@
             <field Id="fd36bcc1-c981-4cb7-ac7b-3c85b6fab04e" name="User" virtualColumnType="XpoDxUser" logicalType="XpoDxUser" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="b8836851-09a0-4c2d-afff-c50efb85ff6e">
-            <persistentAlias Id="36675f40-c621-4ced-87f1-4ca12e66ac18" name="UserId" virtualColumnType="String" expression="[User!Key]" />
+            <persistentAlias Id="36675f40-c621-4ced-87f1-4ca12e66ac18" name="UserId" virtualColumnType="String" expression="[User.Id]" />
           </generalXpObjectHasFields>
         </fields>
         <superClass>
@@ -341,7 +341,7 @@
             <field Id="65f6fc52-a8e8-44d3-9594-cc8707e7ccdc" name="Role" virtualColumnType="XpoDxRole" logicalType="XpoDxRole" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="5b3b2187-679e-43d2-ad2f-bda30e997f49">
-            <persistentAlias Id="803a0885-72eb-4167-8668-5164c056d744" name="RoleId" virtualColumnType="String" expression="[Role!Key]" />
+            <persistentAlias Id="803a0885-72eb-4167-8668-5164c056d744" name="RoleId" virtualColumnType="String" expression="[Role.Id]" />
           </generalXpObjectHasFields>
         </fields>
         <superClass>

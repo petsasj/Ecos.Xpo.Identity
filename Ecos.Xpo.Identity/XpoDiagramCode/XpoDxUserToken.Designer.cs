@@ -48,7 +48,7 @@ namespace Ecos.Xpo.Identity.Persistent
             get { return _Value; }
             set { SetPropertyValue<string>("Value", ref _Value, value); }
         }
-        [PersistentAlias("[User!Key]")]
+        [PersistentAlias("[User.Id]")]
         public string UserId
         {
             get { return (string)(EvaluateAlias("UserId")); }
