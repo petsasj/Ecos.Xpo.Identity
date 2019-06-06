@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>1.0.0.1</Version>
-    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.1.0.0</Version>
+    <FileVersion>1.1.0.0</FileVersion>
     <Authors>Ecos</Authors>
     <Description>XPO Based storage provider for ASP.NET Identity, based on Don Wibier's project hosted at https://github.com/donwibier/DXWeb</Description>
     <Copyright></Copyright>
@@ -20,7 +20,7 @@
     <PackageId>Ecos.Xpo.Identity</PackageId>
     <Company>SoftOne - Ecos</Company>
     <Product>Ecos.Xpo.Identity</Product>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='net461'">
