@@ -235,7 +235,7 @@ namespace Ecos.Xpo.Identity
 				{
 					AssignLogins(src.LoginsList);
 				}
-			}
+            }
 		}
 
 

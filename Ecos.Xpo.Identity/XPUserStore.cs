@@ -731,6 +731,23 @@ namespace Ecos.Xpo.Identity
 
 #endif
 
+        // Added 15/05/2019
+        // Trying to fix GetUsersInRoleAsync
+        public async virtual Task<List<TUser>> GetUsersInRoleAsync(string roleName)
+        {
+            ThrowIfDisposed();
+
+            var result = await Task.FromResult(XPOExecute((db, wrk) =>
+            {
+                var xpoRole = wrk.Query<XpoDxRole>().Where(r => r.NameUpper.ToUpper() == roleName.ToUpper());
+                var xpoUsersInRole = wrk.Query<XpoDxRole>().Where(r => r.NameUpper.ToUpper() == roleName.ToUpper()).Select(r => r.Users).FirstOrDefault();
+                var xpoUsersInRoleAsList = xpoUsersInRole?.ToList().Select(r => Activator.CreateInstance(typeof(TUser), r, DxIdentityUserFlags.FLAG_FULL) as TUser).ToList();
+
+                return xpoUsersInRoleAsList == null ? null : xpoUsersInRoleAsList;
+            }));
+            return result;
+        }
+
         public async virtual Task AddToRoleAsync(TUser user, string roleName)
 		{
 			ThrowIfDisposed();

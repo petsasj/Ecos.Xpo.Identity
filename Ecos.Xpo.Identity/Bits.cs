@@ -6,7 +6,7 @@
 		public const int FLAG_CLAIMS = 2;
 		public const int FLAG_LOGINS = 4;
 		public const int FLAG_USERS = 8;
-		public const int FLAG_FULL = 254;
+		public const int FLAG_FULL = 15;
 	}
 
 	public static class DxIdentityRoleFlags
